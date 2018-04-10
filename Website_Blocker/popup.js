@@ -4,10 +4,11 @@
     changeColor.style.backgroundColor = data.color;
     changeColor.setAttribute('value', data.color);
   });
-  
-    changeColor.onclick = function(element) {
+
+	changeColor.onclick = function(element) {
     let color = element.target.value;
       chrome.tabs.executeScript(
           tabs[0].id,
           {code: 'document.body.style.backgroundColor = "' + color + '";'});
   };
+	  
