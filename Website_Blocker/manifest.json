@@ -2,7 +2,8 @@
     "name": "Website Blocker Test",
     "version": "1.0",
     "description": "Testing website blocker V1",
-	"permissions": ["declarativeContent", "storage"],
+  "permissions": 
+  ["declarativeContent", "storage","tabs"],
 	"background": {
       "scripts": ["background.js"],
       "persistent": false
@@ -16,6 +17,15 @@
         "128": "images/get_started128.png"
       }
     },
+
+  "content_scripts":[
+    {
+      "matches": ["https://www.facebook.com/*"],
+      "run_at": "document_start",
+      "js": ["content_script.js"]
+    }
+  ],
+
 	"options_page": "options.html",
 	"icons": {
       "16": "images/get_started16.png",
