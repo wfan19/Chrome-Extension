@@ -28,8 +28,17 @@
         "32": "images/get_started32.png",
         "48": "images/get_started48.png",
         "128": "images/get_started128.png"
+      }
+    },
+
+  "content_scripts":[
+    {
+      "matches": ["https://www.facebook.com/*"],
+      "run_at": "document_start",
+      "js": ["content_script.js"]
     }
-  },
+  ],
+
 	"options_page": "options.html",
   "icons": 
     {
