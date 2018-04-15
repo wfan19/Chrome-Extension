@@ -5,8 +5,6 @@
   "permissions": 
   [
     "storage",
-    "webRequestBlocking",
-     "webRequest",
      "activeTab",
      "tabs",
      "http://*/*",
@@ -15,9 +13,10 @@
 	"background": {
       "scripts": 
       [
-        "background.js"
+        "background.js",
+        "jquery-3.3.1.js"
       ],
-      "persistent": true
+      "persistent": false
     },
   "browser_action": 
   {
@@ -33,7 +32,7 @@
 
   "content_scripts":[
     {
-      "matches": ["https://www.facebook.com/*"],
+      "matches": ["*://*.youtube.com/*"],
       "run_at": "document_start",
       "js": ["content_script.js"]
     }
