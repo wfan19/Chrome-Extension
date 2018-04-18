@@ -16,25 +16,12 @@ function myMain(evt)
      document.body.appendChild(text);
      text.style.fontSize = "60px";
      text.style.fontFamily = "Sans Serif"
-     /*
-     text.style.marginLeft = "500px";
-     text.style.marginTop = "250px"
-    */
 
      text.style.marginTop = "-100px";
-     //text.style.marginLeft = "-50px";
      text.style.position = "absolute";
      text.style.textAlign = "center";
      text.style.top = "50%";
      text.style.left = "0";
      text.style.width = "100%";
-     //text.style.height = "100%";
     }
 }
-
-/*
-function removeCSS (file)
-{
-    
-}
-*/
