@@ -7,8 +7,7 @@
     "storage",
      "activeTab",
      "tabs",
-     "http://*/*",
-     "https://*/*"
+     "<all_urls>"
   ],
 	"background": {
       "scripts": 
@@ -29,14 +28,6 @@
         "128": "images/get_started128.png"
       }
     },
-
-  "content_scripts":[
-    {
-      "matches": ["*://*.youtube.com/*"],
-      "run_at": "document_start",
-      "js": ["content_script.js"]
-    }
-  ],
 
 	"options_page": "options.html",
   "icons": 
